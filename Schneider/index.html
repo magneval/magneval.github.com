@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <meta name="author" content="SII" />
+  <title>Architecture Distribué, Cloud et mobilité</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="sii.css" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <!--
+  extra links
+  -->
+  <link rel="apple-touch-icon" href="se_logo.png" />
+  
+</head>
+<body>
+<section>
+  <h1 class="title">Architecture Distribué, Cloud et mobilité</h1>
+  <h2 class="author">SII</h2>
+  <h3 class="date">Charles de MAGNEVAL <script type="text/javascript">
+                   <!--
+                   h='&#x73;&#x69;&#x69;&#46;&#102;&#114;';a='&#64;';n='&#x63;&#100;&#x65;&#x6d;&#x61;&#x67;&#110;&#x65;&#118;&#x61;&#108;';e=n+a+h;
+                   document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'CdeMagneval@sii.fr'+'<\/'+'a'+'>');
+                   // -->
+                   </script><noscript>&#x43;&#100;&#x65;&#x4d;&#x61;&#x67;&#110;&#x65;&#118;&#x61;&#108;&#64;&#x73;&#x69;&#x69;&#46;&#102;&#114;&#32;&#40;&#x63;&#100;&#x65;&#x6d;&#x61;&#x67;&#110;&#x65;&#118;&#x61;&#108;&#32;&#x61;&#116;&#32;&#x73;&#x69;&#x69;&#32;&#100;&#x6f;&#116;&#32;&#102;&#114;&#x29;</noscript></h3>
+</section>
+<section id="plan" class="slide level1">
+<h1>Plan</h1>
+<ul class="incremental">
+<li>Architecture Distribué</li>
+<li>le Cloud</li>
+<li>Mobilité</li>
+<li>Développement IOS / Android</li>
+<li>Agnosticité du code</li>
+</ul>
+</section>
+<section id="architecture-distribué" class="slide level1">
+<h1>Architecture Distribué</h1>
+<p>L'évolution des systèmes informatiques</p>
+<ul class="incremental">
+<li>Architecture centralisée (MainFrame)</li>
+<li>Architecture Client serveur</li>
+<li>Modèle N tiers</li>
+<li>Distribution par Protocole Objet (CORBA, RMI, .Net Remoting, SOAP)</li>
+<li>Architecture Massivement distribuée (JINI, Peer 2 Peer)</li>
+</ul>
+</section>
+<section id="le-cloud" class="slide level1">
+<h1>Le Cloud</h1>
+<figure>
+<img src="Nuage.png" title="Le Cloud" />
+</figure>
+</section>
+<section id="le-cloud-1" class="slide level1">
+<h1>Le Cloud</h1>
+<p>On distingue habituellement quatre grands modèles de service :</p>
+<ul class="incremental">
+<li>Software as a Service (SaaS);</li>
+<li>Data as a Service (DaaS);</li>
+<li>Platform as a Service (PaaS);</li>
+<li>Infrastructure as a Service (IaaS);</li>
+</ul>
+</section>
+<section id="le-cloud-2" class="slide level1">
+<h1>Le Cloud</h1>
+<figure>
+<img src="ModelesDeService.png" title="Les différents modèles de service" />
+</figure>
+</section>
+<section id="le-cloud-3" class="slide level1">
+<h1>Le Cloud</h1>
+<p>On distingue trois modèles de déploiement de cloud computing :</p>
+<ul class="incremental">
+<li>les clouds privés internes, gérés en interne par une entreprise pour ses besoins ;</li>
+<li>les clouds privés externes, ou privatifs, dédiés aux besoins propres d'une seule entreprise, mais dont la gestion est externalisée chez un prestataire ;</li>
+<li>les clouds publics, gérés par des entreprises spécialisées qui louent leurs services à de nombreuses entreprises.</li>
+</ul>
+</section>
+<section id="le-cloud-4" class="slide level1">
+<h1>Le Cloud</h1>
+<p>Les Avantages du cloud :</p>
+<ul class="incremental">
+<li>Externalisé l'administration des serveurs</li>
+<li>Possibilité des scalabilité lié à la demande</li>
+<li>L'accès des utilisateurs est effectué la plupart du temps grâce à un navigateur Web.</li>
+<li>Haute disponibilité</li>
+<li>L'application est consltable depuis le monde entier via Internet</li>
+</ul>
+</section>
+<section id="mobilité" class="slide level1">
+<h1>Mobilité</h1>
+<p>L'évolution de l'informatique va de plus en plus vers des équipements qui nous suivent :</p>
+<ul class="incremental">
+<li>Accroissement des portables dans les années 2000</li>
+<li>Massification de l'offre réseau sans fils (GSM, GPRS, Edge, Wifi, 3G, WiMAX, 4G)</li>
+<li>Explosion des Smart-phones (74% de croissance en 2011)</li>
+<li>Création des Tablettes puis des Phablettes</li>
+<li>Apparition d'un modèle 100% connecté</li>
+<li>Enrichissement de lineraction utilisateur (multi-touch, WebCam, GPS, Accéléromètre)</li>
+</ul>
+</section>
+<section id="développement-ios-android" class="slide level1">
+<h1>Développement IOS / Android</h1>
+<p>Malheureusement le modèles est morcelé :</p>
+<ul class="incremental">
+<li>Symbian OS</li>
+<li>Bada (5.3 %)</li>
+<li>Windows Mobile (4 %)</li>
+<li>Windows Surface RT</li>
+<li>BlackBerry OS (4.7 %)</li>
+<li>Apple Ios (25 %)<br /></li>
+<li>Android (58 %)
+<ul class="incremental">
+<li>Gingerbread (44 %)</li>
+<li>Ice Cream Sandwich (28 %)</li>
+<li>Jelly Bean (16%)</li>
+</ul></li>
+</ul>
+</section>
+<section id="agnosticité-du-code" class="slide level1">
+<h1>Agnosticité du code</h1>
+<p>Les modèles de développements sont incompatibles :</p>
+<ul class="incremental">
+<li>Objective C sur IOS</li>
+<li>Java sur Android et BlackBerry</li>
+<li>.Net sur Windows Mobile</li>
+<li>C sur Symbian OS</li>
+</ul>
+<p>Les modèle traditionnel n'ont plus cours.</p>
+<ul class="incremental">
+<li><p>Flash ne fonctionne pas ni Sur IOS, ni sur Android 4.1 (Jelly Bean)</p></li>
+<li><p>Pas de Java sous IOS</p></li>
+</ul>
+</section>
+<section id="agnosticité-du-code-1" class="slide level1">
+<h1>Agnosticité du code</h1>
+<p>Une solution (Miracle ?) existe :</p>
+<ul class="incremental">
+<li><img src="HTML5.png" title="fig:HTML5" /></li>
+</ul>
+</section>
+<section id="agnosticité-du-code-2" class="slide level1">
+<h1>Agnosticité du code</h1>
+<p>La mise en place d'une infrastructure type</p>
+<ul class="incremental">
+<li><p>coté client :</p>
+<ul class="incremental">
+<li>d'HTML5</li>
+<li>CSS3</li>
+<li>Framework JavaScript</li>
+</ul></li>
+</ul>
+</section>
+<section id="agnosticité-du-code-3" class="slide level1">
+<h1>Agnosticité du code</h1>
+<ul class="incremental">
+<li><p>coté serveur :</p>
+<ul class="incremental">
+<li>Java</li>
+<li>Node JS</li>
+<li>.Net</li>
+<li>...</li>
+</ul></li>
+</ul>
+</section>
+<section id="agnosticité-du-code-4" class="slide level1">
+<h1>Agnosticité du code</h1>
+<ul class="incremental">
+<li><p>pour la communication entre le client et le serveur :</p>
+<ul class="incremental">
+<li>des services de type Rest</li>
+</ul></li>
+<li><p>pour la communication entre services distribué :</p>
+<ul class="incremental">
+<li>des services de type Rest ou SOAP</li>
+</ul></li>
+</ul>
+<p>permette de répondre de manière universelle sur les différentes plates-formes.</p>
+</section>
+<section id="agnosticité-du-code-5" class="slide level1">
+<h1>Agnosticité du code</h1>
+<p>Un # ou un Bémole</p>
+<p>Le soucis est qu'il faut toujours vérifer la compatibilités des fonctionnalitées spécifiques comme le multi-touch, L'accès au resources du système (WebCam, GPS, ....)</p>
+<p>ainsi que le rendu dans les différentes résolutions (Téléphones, Phablettes, Tablettes, PC).</p>
+</section>
+<section id="conclusion" class="slide level1">
+<h1>Conclusion</h1>
+<p>Le modèle d'infrastructure distribué sur le Cloud accèssible de manière multi canal :</p>
+<ul class="incremental">
+<li>PC</li>
+<li>Tablette</li>
+<li>Mobile</li>
+</ul>
+<p>est devenu une réalitée incontournable.</p>
+<p><strong>Les bons choix doivent être fait pour péréniser la solution retenue.</strong></p>
+</section>
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  details { display: none; }
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto; }
+  html { overflow: hidden; }
+  body { display: none; }
+  body.loaded { display: block; }
+  .incremental {visibility: hidden; }
+  .incremental[active] {visibility: visible; }
+  #progress-bar{
+    bottom: 0;
+    position: absolute;
+    -moz-transition: width 400ms linear 0s;
+    -webkit-transition: width 400ms linear 0s;
+    -ms-transition: width 400ms linear 0s;
+    transition: width 400ms linear 0s;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
+  }
+</style>
+
+<script>
+  var Dz = {
+    remoteWindows: [],
+    idx: -1,
+    step: 0,
+    slides: null,
+    progressBar : null,
+    params: {
+      autoplay: "1"
+    }
+  };
+
+  Dz.init = function() {
+    document.body.className = "loaded";
+    this.slides = $$("body > section");
+    this.progressBar = $("#progress-bar");
+    this.setupParams();
+    this.onhashchange();
+    this.setupTouchEvents();
+    this.onresize();
+  }
+  
+  Dz.setupParams = function() {
+    var p = window.location.search.substr(1).split('&');
+    p.forEach(function(e, i, a) {
+      var keyVal = e.split('=');
+      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+    });
+  // Specific params handling
+    if (!+this.params.autoplay)
+      $$.forEach($$("video"), function(v){ v.controls = true });
+  }
+
+  Dz.onkeydown = function(aEvent) {
+    // Don't intercept keyboard shortcuts
+    if (aEvent.altKey
+      || aEvent.ctrlKey
+      || aEvent.metaKey
+      || aEvent.shiftKey) {
+      return;
+    }
+    if ( aEvent.keyCode == 37 // left arrow
+      || aEvent.keyCode == 38 // up arrow
+      || aEvent.keyCode == 33 // page up
+    ) {
+      aEvent.preventDefault();
+      this.back();
+    }
+    if ( aEvent.keyCode == 39 // right arrow
+      || aEvent.keyCode == 40 // down arrow
+      || aEvent.keyCode == 34 // page down
+    ) {
+      aEvent.preventDefault();
+      this.forward();
+    }
+    if (aEvent.keyCode == 35) { // end
+      aEvent.preventDefault();
+      this.goEnd();
+    }
+    if (aEvent.keyCode == 36) { // home
+      aEvent.preventDefault();
+      this.goStart();
+    }
+    if (aEvent.keyCode == 32) { // space
+      aEvent.preventDefault();
+      this.toggleContent();
+    }
+    if (aEvent.keyCode == 70) { // f
+      aEvent.preventDefault();
+      this.goFullscreen();
+    }
+  }
+
+  /* Touch Events */
+
+  Dz.setupTouchEvents = function() {
+    var orgX, newX;
+    var tracking = false;
+
+    var db = document.body;
+    db.addEventListener("touchstart", start.bind(this), false);
+    db.addEventListener("touchmove", move.bind(this), false);
+
+    function start(aEvent) {
+      aEvent.preventDefault();
+      tracking = true;
+      orgX = aEvent.changedTouches[0].pageX;
+    }
+
+    function move(aEvent) {
+      if (!tracking) return;
+      newX = aEvent.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        this.forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          this.back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  Dz.onresize = function() {
+    var db = document.body;
+    var sx = db.clientWidth / window.innerWidth;
+    var sy = db.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+    db.style.MozTransform = transform;
+    db.style.WebkitTransform = transform;
+    db.style.OTransform = transform;
+    db.style.msTransform = transform;
+    db.style.transform = transform;
+  }
+
+
+  Dz.getDetails = function(aIdx) {
+    var s = $("section:nth-of-type(" + aIdx + ")");
+    var d = s.$("details");
+    return d ? d.innerHTML : "";
+  }
+
+  Dz.onmessage = function(aEvent) {
+    var argv = aEvent.data.split(" "), argc = argv.length;
+    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+    var win = aEvent.source;
+    if (argv[0] === "REGISTER" && argc === 1) {
+      this.remoteWindows.push(win);
+      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+      return;
+    }
+    if (argv[0] === "BACK" && argc === 1)
+      this.back();
+    if (argv[0] === "FORWARD" && argc === 1)
+      this.forward();
+    if (argv[0] === "START" && argc === 1)
+      this.goStart();
+    if (argv[0] === "END" && argc === 1)
+      this.goEnd();
+    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+      this.toggleContent();
+    if (argv[0] === "SET_CURSOR" && argc === 2)
+      window.location.hash = "#" + argv[1];
+    if (argv[0] === "GET_CURSOR" && argc === 1)
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    if (argv[0] === "GET_NOTES" && argc === 1)
+      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  }
+
+  Dz.toggleContent = function() {
+    // If a Video is present in this new slide, play it.
+    // If a Video is present in the previous slide, stop it.
+    var s = $("section[aria-selected]");
+    if (s) {
+      var video = s.$("video");
+      if (video) {
+        if (video.ended || video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+
+  Dz.setCursor = function(aIdx, aStep) {
+    // If the user change the slide number in the URL bar, jump
+    // to this slide.
+    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+    window.location.hash = "#" + aIdx + aStep;
+  }
+
+  Dz.onhashchange = function() {
+    var cursor = window.location.hash.split("#"),
+        newidx = 1,
+        newstep = 0;
+    if (cursor.length == 2) {
+      newidx = ~~cursor[1].split(".")[0];
+      newstep = ~~cursor[1].split(".")[1];
+      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+        newstep = 0;
+        newidx++;
+      }
+    }
+    this.setProgress(newidx, newstep);
+    if (newidx != this.idx) {
+      this.setSlide(newidx);
+    }
+    if (newstep != this.step) {
+      this.setIncremental(newstep);
+    }
+    for (var i = 0; i < this.remoteWindows.length; i++) {
+      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+    }
+  }
+
+  Dz.back = function() {
+    if (this.idx == 1 && this.step == 0) {
+      return;
+    }
+    if (this.step == 0) {
+      this.setCursor(this.idx - 1,
+                     this.slides[this.idx - 2].$$('.incremental > *').length);
+    } else {
+      this.setCursor(this.idx, this.step - 1);
+    }
+  }
+
+  Dz.forward = function() {
+    if (this.idx >= this.slides.length &&
+        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+        return;
+    }
+    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      this.setCursor(this.idx + 1, 0);
+    } else {
+      this.setCursor(this.idx, this.step + 1);
+    }
+  }
+
+  Dz.goStart = function() {
+    this.setCursor(1, 0);
+  }
+
+  Dz.goEnd = function() {
+    var lastIdx = this.slides.length;
+    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+    this.setCursor(lastIdx, lastStep);
+  }
+
+  Dz.setSlide = function(aIdx) {
+    this.idx = aIdx;
+    var old = $("section[aria-selected]");
+    var next = $("section:nth-of-type("+ this.idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.$("video");
+      if (video) {
+        video.pause();
+      }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.$("video");
+      if (video && !!+this.params.autoplay) {
+        video.play();
+      }
+    } else {
+      // That should not happen
+      this.idx = -1;
+      // console.warn("Slide doesn't exist.");
+    }
+  }
+
+  Dz.setIncremental = function(aStep) {
+    this.step = aStep;
+    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+    if (old) {
+      old.removeAttribute('aria-selected');
+    }
+    var incrementals = $$('.incremental');
+    if (this.step <= 0) {
+      $$.forEach(incrementals, function(aNode) {
+        aNode.removeAttribute('active');
+      });
+      return;
+    }
+    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+    if (next) {
+      next.setAttribute('aria-selected', true);
+      next.parentNode.setAttribute('active', true);
+      var found = false;
+      $$.forEach(incrementals, function(aNode) {
+        if (aNode != next.parentNode)
+          if (found)
+            aNode.removeAttribute('active');
+          else
+            aNode.setAttribute('active', true);
+        else
+          found = true;
+      });
+    } else {
+      setCursor(this.idx, 0);
+    }
+    return next;
+  }
+
+  Dz.goFullscreen = function() {
+    var html = $('html'),
+        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+    if (requestFullscreen) {
+      requestFullscreen.apply(html);
+    }
+  }
+  
+  Dz.setProgress = function(aIdx, aStep) {
+    var slide = $("section:nth-of-type("+ aIdx +")");
+    if (!slide)
+      return;
+    var steps = slide.$$('.incremental > *').length + 1,
+        slideSize = 100 / (this.slides.length - 1),
+        stepSize = slideSize / steps;
+    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+  }
+  
+  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+    aMsg = [aMsg];
+    for (var i = 2; i < arguments.length; i++)
+      aMsg.push(encodeURIComponent(arguments[i]));
+    aWin.postMessage(aMsg.join(" "), "*");
+  }
+  
+  function init() {
+    Dz.init();
+    window.onkeydown = Dz.onkeydown.bind(Dz);
+    window.onresize = Dz.onresize.bind(Dz);
+    window.onhashchange = Dz.onhashchange.bind(Dz);
+    window.onmessage = Dz.onmessage.bind(Dz);
+  }
+
+  window.onload = init;
+</script>
+
+
+<script> // Helpers
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+
+      // closest thing possible to the ECMAScript 5 internal IsCallable
+      // function 
+      if (typeof this !== "function")
+      throw new TypeError(
+        "Function.prototype.bind - what is trying to be fBound is not callable"
+      );
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      fNOP.prototype = this.prototype;
+      fBound.prototype = new fNOP();
+
+      return fBound;
+    };
+  }
+
+  var $ = (HTMLElement.prototype.$ = function(aQuery) {
+    return this.querySelector(aQuery);
+  }).bind(document);
+
+  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+    return this.querySelectorAll(aQuery);
+  }).bind(document);
+
+  $$.forEach = function(nodeList, fun) {
+    Array.prototype.forEach.call(nodeList, fun);
+  }
+
+</script>
+<!-- vim: set fdm=marker: }}} -->
+</body>
+</html>
