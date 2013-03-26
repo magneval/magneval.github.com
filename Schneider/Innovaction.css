@@ -1,0 +1,366 @@
+/* 
+    Document   : Innovaction
+    Created on : 25 sept. 2012, 11:27:29
+    Author     : charles de MAGNEVAL
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/**
+    utilisation de less pour la mise en place de définition multi-navigateurs
+    prise en charge des préfixes -o- -moz- -webkit- pour les nouvelles balises pas encore validées.
+
+*/
+@import "lib";
+
+body {
+    background-color: rgb(81,81,83);
+    width: 90%;
+}
+
+/**
+présentation d'informations reccurentes avant le contenu de la pages
+*/
+
+body:before {
+    content: url(../Images/InnovAdget.jpg) " InnovAction";
+    color: white;
+    font-size: large;
+    vertical-align: text-top;
+    padding-left:  1em; 
+}
+
+/**
+présentation d'informations récurentes après le contenu de la pages
+*/
+
+body:after {
+    text-align: right;
+    right: 10%;
+    position: absolute;
+    content: url(../Images/logo.png)  ;
+}
+
+/**
+Header zone des icones
+*/
+
+body > header {
+    margin: 2em;
+    position: absolute;
+    right: 5%;
+    top: 0px;
+}
+
+header img {
+    height: 2em;
+    width: 2em;
+}
+
+/**
+zone de menus
+*/
+nav {
+    display: none;
+    width: 15%;
+}
+
+nav a {
+    .border-radius(1em);
+    padding: 1em;
+    /*background: buttonface;*/
+    /*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e5e5e5), to(#bbb));*/
+    /*background: -moz-linear-gradient(0% 100% 90deg,#bbb, #e5e5e5);*/
+    background-color:  grey;
+    margin: auto;
+    border: buttonshadow groove medium;
+    text-decoration: none;
+    /*color: buttontext;*/
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#NavAnnonce
+{
+    background-image: url(../Images/annonce.png) ;
+    background-repeat: no-repeat;
+}
+
+#NavComite
+{
+    background-image: url(../Images/comite.png) ;
+    background-repeat: no-repeat;
+}
+
+#NavIdee
+{
+    background-image: url(../Images/idee.png) ;
+    background-repeat: no-repeat;
+}
+
+nav a:hover 
+{
+    /*background: buttonhighlight;*/
+    background: graytext;
+    border-style: ridge;
+}
+
+nav a:active 
+{
+    background-color: green;
+    /*background: -moz-linear-gradient(0% 100% 90deg,#7fbf4d, #63a62f);*/
+}
+
+/**
+zone d'affichage d'infos
+*/
+
+section  {
+    .border-radius(1em);
+    width: 100%;
+    margin: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    background: white;
+    display: none;
+    overflow: hidden ;
+
+    /* Test transition FPO 17/10/2012 */
+    margin-left: 120%;
+    transition : margin-left 2s;
+    -moz-transition:margin-left 2s; /* Firefox 4 */
+    -webkit-transition:margin-left 2s; /* Safari and Chrome */
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;
+    -o-transition:margin-left 2s; /* Opera */
+}
+
+
+section.Annonces {
+    height: 5em;
+
+}
+
+section.Comites 
+{
+    height: 2em;
+}
+
+section.Idees {
+    height: 9.5em;
+
+}
+
+/**
+zone de div pour le scroll automatique des idées
+*/
+section.Idees > div {
+    position:relative;
+    .animation-iteration-count(infinite);
+    .animation-timing-function(linear);
+    .animation-duration(20s);
+    .animation-name(scrollIdees);
+}
+
+/**
+    définition du scénarios de scroll 
+*/
+.keyframes_scrollIdees(){
+    0% {top:0;}
+/*90% {top:-21em;}*/
+32% {top:0;}
+34% {top:-10.5em;}
+65% {top:-10.5em;}
+67% {top:-21em;}
+100% {top:-21em;}
+}
+@-moz-keyframes scrollIdees {
+    .keyframes_scrollIdees
+}
+
+@-webkit-keyframes scrollIdees {
+    .keyframes_scrollIdees
+}
+
+@-o-keyframes scrollIdees {
+    .keyframes_scrollIdees
+}
+
+@keyframes scrollIdees {
+    .keyframes_scrollIdees
+}
+
+section.Idees > div:hover {
+    animation-play-state: paused;
+}
+
+section.Idees ul,section.Idees ul {
+    display: none;
+}
+
+article > p {
+    margin-top: 0px;
+}
+
+article > ul { 
+    display: none;
+    height:0px;
+}
+
+article > footer {
+    display: none;    
+}
+
+/**
+affichage de l'élément et ses enfants dont l'id est dans l'url sous la forme url#id
+*/
+:target {
+    display: inherit;
+}
+
+:target > *{
+    display: inherit;
+}
+
+article:hover p{
+    display: inherit;
+    transition: all .5s cubic-bezier( .6, 2, .4, 1);
+}
+
+
+aside > section {
+    display: none;
+
+}
+
+aside > article {
+    display: none;
+}
+
+/**
+définition de l'écran de détail d'idées
+*/
+#DetailIdees > article:target {
+    display: inherit;
+    height:inherit;
+    .border-radius(1em);
+/*    width: 100%;
+    margin: 1em;*/
+    margin-top: 2em;
+    padding: 1em;
+    background: white;
+    overflow: hidden ;
+}
+
+#DetailIdees > article ul {
+    height:inherit;
+}
+
+#DetailIdees > article  > footer  {
+    text-align: right;
+}
+
+/**
+definition de l'ecran de detail d'annonces
+*/
+#DetailAnnonces > article:target 
+{
+    display: inherit;
+    height:inherit;
+    .border-radius(1em);
+/*    width: 100%;
+    margin: 1em;*/
+    margin-top: 2em;
+    padding: 1em;
+    background: white;
+    overflow: hidden ;
+}
+
+/**
+definition de l'ecran de detail de comit�s
+*/
+#DetailComites > article:target 
+{
+    display: inherit;
+    height:inherit;
+    .border-radius(1em);
+    /*
+    width: 100%;
+    margin: 1em;
+    */
+    margin-top: 2em;
+    padding: 1em;
+    background: white;
+    overflow: hidden ;
+}
+
+/* Format du titre du comité dans détail commité */
+#DetailComites > article > header
+{
+    font-weight:bold;
+}
+
+#Idees {
+    height: 10em;
+    overflow-y: scroll;
+}
+
+/* Ajout le 16/10/2012 par FPO ; Pour scroll comités */
+/* Zone de div pour le scroll automatique des idées */
+section.Comites > div 
+{
+    position:relative;
+    .animation-iteration-count(infinite);
+    .animation-timing-function(linear);
+    .animation-duration(15s);
+    .animation-name(scrollComites);
+}
+
+/* Définition du scénario de scroll */
+.keyframes_scrollComites()
+{
+    0% {top:0;}
+31% {top:0;}
+
+35% {top:-3.5em;}
+64% {top:-3.5em;}
+
+68% {top:-7em;}
+96% {top:-7em;}
+
+100% {top:0em;}
+}
+/* Appel de la fonction générique pour les différents navigateurs */
+@-moz-keyframes scrollComites 
+{
+    .keyframes_scrollComites
+}
+
+@-webkit-keyframes scrollComites 
+{
+    .keyframes_scrollComites
+}
+
+@-o-keyframes scrollComites 
+{
+    .keyframes_scrollComites
+}
+
+@keyframes scrollComites 
+{
+    .keyframes_scrollComites
+}
+
+/* Pour arrêter le définlement au survol de la div */
+section.Comites > div:hover 
+{
+    animation-play-state: paused;
+}
+
+section.Comites ul,section.Comites ul 
+{
+    display: none;
+}
