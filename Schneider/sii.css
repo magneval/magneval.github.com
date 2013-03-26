@@ -133,11 +133,17 @@ img {
   width: 100%;
 }
 
-#le-cloud-2  {
+#le-cloud-2, 
+#avez-vous-des-questions  {
   background-color: white;
 }
 
-#le-cloud-2  img {
+#avez-vous-des-questions figure {
+  background-color: white;
+}
+
+#le-cloud-2  img,
+#avez-vous-des-questions  img {
   padding-left:5%;  
   padding-right:5%;  
   padding-bottom:2%;  
@@ -145,7 +151,12 @@ img {
   width: 90%;
 }
 
+#agnosticité-du-code-1 {
+  text-align: center;
+}
+
 #agnosticité-du-code-1  img {
+  text-align: center;
   padding-left:20%;  
   padding-right:20%;  
   padding-bottom:20%;  

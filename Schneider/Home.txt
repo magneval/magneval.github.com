@@ -153,3 +153,8 @@ Le modèle d'infrastructure distribué sur le Cloud accèssible de manière mult
 est devenu une réalitée incontournable.
 
 **Les bons choix doivent être fait pour péréniser la solution retenue.**
+
+# Avez vous des Questions ?
+
+![](Nuage.png "Le Cloud")
+
