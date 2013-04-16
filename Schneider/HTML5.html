@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="SII">
+  <title>Architecture Distribué, Cloud et mobilité</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<style>
+		@page { margin: 2cm } 
+		h1 { break-before: always }
+	</style>
+</head>
+<body>
+<header>
+<h1 class="title">Architecture Distribué, Cloud et mobilité</h1>
+<h2 class="author">SII</h2>
+<h3 class="date">Charles de MAGNEVAL <script type="text/javascript">
+                 <!--
+                 h='&#x73;&#x69;&#x69;&#46;&#102;&#114;';a='&#64;';n='&#x63;&#100;&#x65;&#x6d;&#x61;&#x67;&#110;&#x65;&#118;&#x61;&#108;';e=n+a+h;
+                 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'CdeMagneval@sii.fr'+'<\/'+'a'+'>');
+                 // -->
+                 </script><noscript>&#x43;&#100;&#x65;&#x4d;&#x61;&#x67;&#110;&#x65;&#118;&#x61;&#108;&#64;&#x73;&#x69;&#x69;&#46;&#102;&#114;&#32;&#40;&#x63;&#100;&#x65;&#x6d;&#x61;&#x67;&#110;&#x65;&#118;&#x61;&#108;&#32;&#x61;&#116;&#32;&#x73;&#x69;&#x69;&#32;&#100;&#x6f;&#116;&#32;&#102;&#114;&#x29;</noscript></h3>
+</header>
+<h1 id="plan">Plan</h1>
+<ul>
+<li>Architecture Distribué</li>
+<li>le Cloud</li>
+<li>Mobilité</li>
+<li>Développement IOS / Android</li>
+<li>Agnosticité du code</li>
+</ul>
+<h1 id="architecture-distribué">Architecture Distribué</h1>
+<p>L'évolution des systèmes informatiques</p>
+<ul>
+<li>Architecture centralisée (MainFrame)</li>
+<li>Architecture Client serveur</li>
+<li>Modèle N tiers</li>
+<li>Distribution par Protocole Objet (CORBA, RMI, .Net Remoting, SOAP)</li>
+<li>Architecture Massivement distribuée (JINI, Peer 2 Peer)</li>
+</ul>
+<h1 id="le-cloud">Le Cloud</h1>
+<figure>
+<img src="Nuage.png" title="Le Cloud"><figcaption></figcaption>
+</figure>
+<h1 id="le-cloud-1">Le Cloud</h1>
+<p>On distingue habituellement quatre grands modèles de service :</p>
+<ul>
+<li>Software as a Service (SaaS);</li>
+<li>Data as a Service (DaaS);</li>
+<li>Platform as a Service (PaaS);</li>
+<li>Infrastructure as a Service (IaaS);</li>
+</ul>
+<h1 id="le-cloud-2">Le Cloud</h1>
+<figure>
+<img src="ModelesDeService.png" title="Les différents modèles de service"><figcaption></figcaption>
+</figure>
+<h1 id="le-cloud-3">Le Cloud</h1>
+<p>On distingue trois modèles de déploiement de cloud computing :</p>
+<ul>
+<li>les clouds privés internes, gérés en interne par une entreprise pour ses besoins ;</li>
+<li>les clouds privés externes, ou privatifs, dédiés aux besoins propres d'une seule entreprise, mais dont la gestion est externalisée chez un prestataire ;</li>
+<li>les clouds publics, gérés par des entreprises spécialisées qui louent leurs services à de nombreuses entreprises.</li>
+</ul>
+<h1 id="le-cloud-4">Le Cloud</h1>
+<p>Les Avantages du cloud :</p>
+<ul>
+<li>Externalisé l'administration des serveurs</li>
+<li>Possibilité des scalabilité lié à la demande</li>
+<li>L'accès des utilisateurs est effectué la plupart du temps grâce à un navigateur Web.</li>
+<li>Haute disponibilité</li>
+<li>L'application est consltable depuis le monde entier via Internet</li>
+</ul>
+<h1 id="mobilité">Mobilité</h1>
+<p>L'évolution de l'informatique va de plus en plus vers des équipements qui nous suivent :</p>
+<ul>
+<li>Accroissement des portables dans les années 2000</li>
+<li>Massification de l'offre réseau sans fils (GSM, GPRS, Edge, Wifi, 3G, WiMAX, 4G)</li>
+<li>Explosion des Smart-phones (74% de croissance en 2011)</li>
+<li>Création des Tablettes puis des Phablettes</li>
+<li>Apparition d'un modèle 100% connecté</li>
+<li>Enrichissement de lineraction utilisateur (multi-touch, WebCam, GPS, Accéléromètre)</li>
+</ul>
+<h1 id="développement-ios-android">Développement IOS / Android</h1>
+<p>Malheureusement le modèles est morcelé :</p>
+<ul>
+<li>Symbian OS</li>
+<li>Bada (5.3 %)</li>
+<li>Windows Mobile (4 %)</li>
+<li>Windows Surface RT</li>
+<li>BlackBerry OS (4.7 %)</li>
+<li>Apple Ios (25 %)<br></li>
+<li>Android (58 %)
+<ul>
+<li>Gingerbread (44 %)</li>
+<li>Ice Cream Sandwich (28 %)</li>
+<li>Jelly Bean (16%)</li>
+</ul></li>
+</ul>
+<h1 id="agnosticité-du-code">Agnosticité du code</h1>
+<p>Les modèles de développements sont incompatibles :</p>
+<ul>
+<li>Objective C sur IOS</li>
+<li>Java sur Android et BlackBerry</li>
+<li>.Net sur Windows Mobile</li>
+<li>C sur Symbian OS</li>
+</ul>
+<p>Les modèle traditionnel n'ont plus cours.</p>
+<ul>
+<li><p>Flash ne fonctionne pas ni Sur IOS, ni sur Android 4.1 (Jelly Bean)</p></li>
+<li><p>Pas de Java sous IOS</p></li>
+</ul>
+<h1 id="agnosticité-du-code-1">Agnosticité du code</h1>
+<p>Une solution (Miracle ?) existe :</p>
+<ul>
+<li><img src="HTML5.png" title="HTML5"></li>
+</ul>
+<h1 id="agnosticité-du-code-2">Agnosticité du code</h1>
+<p>La mise en place d'une infrastructure type</p>
+<ul>
+<li><p>coté client :</p>
+<ul>
+<li>d'HTML5</li>
+<li>CSS3</li>
+<li>Framework JavaScript</li>
+</ul></li>
+</ul>
+<h1 id="agnosticité-du-code-3">Agnosticité du code</h1>
+<ul>
+<li><p>coté serveur :</p>
+<ul>
+<li>Java</li>
+<li>Node JS</li>
+<li>.Net</li>
+<li>...</li>
+</ul></li>
+</ul>
+<h1 id="agnosticité-du-code-4">Agnosticité du code</h1>
+<ul>
+<li><p>pour la communication entre le client et le serveur :</p>
+<ul>
+<li>des services de type Rest</li>
+</ul></li>
+<li><p>pour la communication entre services distribué :</p>
+<ul>
+<li>des services de type Rest ou SOAP</li>
+</ul></li>
+</ul>
+<p>permette de répondre de manière universelle sur les différentes plates-formes.</p>
+<h1 id="agnosticité-du-code-5">Agnosticité du code</h1>
+<p>Un # ou un Bémole</p>
+<p>Le soucis est qu'il faut toujours vérifer la compatibilités des fonctionnalitées spécifiques comme le multi-touch, L'accès au resources du système (WebCam, GPS, ....)</p>
+<p>ainsi que le rendu dans les différentes résolutions (Téléphones, Phablettes, Tablettes, PC).</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Le modèle d'infrastructure distribué sur le Cloud accèssible de manière multi canal :</p>
+<ul>
+<li>PC</li>
+<li>Tablette</li>
+<li>Mobile</li>
+</ul>
+<p>est devenu une réalitée incontournable.</p>
+<p><strong>Les bons choix doivent être fait pour péréniser la solution retenue.</strong></p>
+<h1 id="avez-vous-des-questions">Avez vous des Questions ?</h1>
+<figure>
+<img src="Nuage.png" title="Le Cloud"><figcaption></figcaption>
+</figure>
+</body>
+</html>

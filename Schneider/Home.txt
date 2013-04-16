@@ -101,7 +101,7 @@ Les modèle traditionnel n'ont plus cours.
 
 Une solution (Miracle ?) existe :
 
-+ ![](HTML5.png "HTML5")
++ ![](../images/HTML5.png "HTML5")
 
 #Agnosticité du code
 
