@@ -19,7 +19,7 @@
   + Le doctype est simplifié :
       ````<!DOCTYPE html>````
   + L'évolution dans les 3 facettes d'HTML5
-      * les balises HTML
+      * [les balises HTML](http://dev.w3.org/html5/html4-differences/)
       * le CSS3
       * les API JavaScripts
 
