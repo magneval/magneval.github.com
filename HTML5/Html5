@@ -87,7 +87,7 @@
   
   + form
   + required
-  + draggable
+  + draggable et dropzone
       * ````<li draggable="true">Element de ma liste</li>````
       *  ```` <div ondrop="drop(this, event)">````
   + [contenteditable](http://html5demos.com/contenteditable)
