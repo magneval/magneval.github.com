@@ -85,6 +85,8 @@
 
 # attributs
   
+  + form
+  + required
   + draggable
       * ````<li draggable="true">Element de ma liste</li>````
       *  ```` <div ondrop="drop(this, event)">````
