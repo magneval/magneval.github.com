@@ -188,73 +188,92 @@ passe de
 
 # Les transformations
 
-![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-3d-transform.jpg)
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-3d-transform.jpg)
 
-* Les rotations
-![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-transform.png)
+# Les rotations
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-transform.png)
+
+# Les transformations
 
 * Les translations
 * Les changements d’échelle
 * Matrice
-* Perspective
+
+# La perspective
+
 ![](http://www.html5-css3.fr/wp-content/uploads/2011/11/transformation-3D-CSS3-perspective.png)
 
 # Les dégradés de couleurs
 
-![](http://www.html5-css3.fr/wp-content/uploads/2011/10/d%C3%A9grad%C3%A9s-couleurs-css3-gradient.png)
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/10/d%C3%A9grad%C3%A9s-couleurs-css3-gradient.png)
 
-* lineaire
-![](http://www.html5-css3.fr/wp-content/uploads/2011/10/internet-explorer-gradient-css3-0.png)
+# lineaire
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/10/internet-explorer-gradient-css3-0.png)
++ ![](gradient-diagram.png)
 
-![](http://dev.w3.org/csswg/css3-images/gradient-diagram.png)
+# circulaires
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/10/css3-radial-gradient.png)
 
-* circulaires
-![](http://www.html5-css3.fr/wp-content/uploads/2011/10/css3-radial-gradient.png)
-
-* les polices de caractères
-![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-font-face.png)
+# les polices de caractères
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-font-face.png)
 
 # Les évolutions de Javascript lié a HTML5
 
-
-====== APIs ======
-* classlist
-[http://html5demos.com/classlist]
-* dataset
-[http://html5demos.com/dataset]
-* history
-[http://html5demos.com/history]
+* [classlist](http://html5demos.com/classlist)
+* [dataset](http://html5demos.com/dataset)
+* [history](http://html5demos.com/history)
 * canvas
-** 2D
-** 3D
-[http://dev.opera.com/articles/view/an-introduction-to-webgl/]
-* geolocalisation
-http://www.html5-css3.fr/wp-content/uploads/2011/01/barre-autorisation-partage-g%C3%A9olocalisation.png
-* application offline
-[http://html5demos.com/offline]
-[http://html5demos.com/storage]
-** local Storage
- localStorage.setItem("name", "John");     
+    * 2D
+    * [3D](http://dev.opera.com/articles/view/an-introduction-to-webgl/)
+    
+# geolocalisation
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/barre-autorisation-partage-g%C3%A9olocalisation.png)
+
+# application offline
+
+* [offline](http://html5demos.com/offline)
+* [storage](http://html5demos.com/storage)
+
+* local Storage
+
+ localStorage.setItem("name", "John");   
+ 
  alert(localStorage.getItem("name"));
-** session Storage
-** SQL Storage
-** application cache
-[http://html5demos.com/offlineapp]
-* Les Web Sockets
-[http://html5demos.com/web-socket]
-* La webcam
-[http://auduno.github.com/headtrackr/examples/targets.html]
-* accelerometre
-** deviceorientation
-** devicemotion
-* DragNDrop
-[http://html5demos.com/dnd-upload]
-[http://html5demos.com/drag]
-[http://html5demos.com/drag-anything]
-* FileReader
-[http://html5demos.com/file-api-simple]
-* postMessage
-* worker
+ 
+* session Storage
+* SQL Storage
+* [application cache](http://html5demos.com/offlineapp)
+
+# Les Web Sockets
+
++ [web-socket](http://html5demos.com/web-socket)
+
+# La webcam
+
++ [headtracker](http://auduno.github.com/headtrackr/examples/targets.html)
+
+# accelerometre
+
+* deviceorientation
+* devicemotion
+
+# DragNDrop
+
++ [dnd-upload](http://html5demos.com/dnd-upload)
++ [drag](http://html5demos.com/drag)
++ [drag-anything](http://html5demos.com/drag-anything)
+
+# FileReader
+
++ [file-api-simple](http://html5demos.com/file-api-simple)
+
+# il en faut encore ?
+
+* [postMessage](http://html5demo.braincracking.org/demo/postMessage.php)
+* worker  
+* [Server-Sent Events](http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_sse)
 
 # Le point sur le support d' HTML5 par les différents navigateurs
 
