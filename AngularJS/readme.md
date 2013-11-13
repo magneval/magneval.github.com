@@ -17,7 +17,7 @@
 
 #Le Binding
   + la visualisation
-  + l'édition
+  + l'édition http://plnkr.co/edit/z5XxZ63iZ0DajUEQZKqZ
   + les répétitions
   + le tri
   + le filtrage
