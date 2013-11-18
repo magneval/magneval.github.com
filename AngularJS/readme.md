@@ -16,11 +16,11 @@
   + Les services Rests
 
 #Le Binding
-  + la visualisation
-  + l'édition http://plnkr.co/edit/z5XxZ63iZ0DajUEQZKqZ
-  + les répétitions
-  + le tri
-  + le filtrage
+  + [la visualisation] (http://plnkr.co/edit/GYDE6mhYT3WweFDCCMYp)
+  + [l'édition] (http://plnkr.co/edit/z5XxZ63iZ0DajUEQZKqZ)
+  + [les répétitions] ()
+  + [le tri] ()
+  + [le filtrage] ()
 
 #Les ressources
   + la récupération
