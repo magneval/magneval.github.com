@@ -27,6 +27,7 @@
   + l'enrichissement
   + la remonté d'information
   + [le Cross Site](http://run.plnkr.co/QayFu8Gn0Sj5UctI/)
+  + [Démo avec GitHub](http://plnkr.co/edit/r8Euj835e4Ua4ZzIL49s?p=preview)
 
 #les directives
   + le formatage
