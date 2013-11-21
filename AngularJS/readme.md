@@ -26,6 +26,7 @@
   + la récupération
   + l'enrichissement
   + la remonté d'information
+  + [le Cross Site](http://run.plnkr.co/QayFu8Gn0Sj5UctI/)
 
 #les directives
   + le formatage
