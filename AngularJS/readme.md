@@ -1,4 +1,4 @@
-% Presentation AngularJS
+% ![](../images/AngularJS-large.png "AngularJS")
 % SII 
 % Charles de MAGNEVAL  <CdeMagneval@sii.fr>
 

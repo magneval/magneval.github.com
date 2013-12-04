@@ -164,3 +164,24 @@ img {
   width: 60%;
 }
 
+section:not(.slide) {
+  background-image: url(../images/LogoSII.gif);
+  background-repeat: no-repeat;
+  background-position: 30% 60%;
+}
+
+section.slide {
+  background-image: url(../images/LogoSII.gif);
+  background-position-x: 20px;
+  background-position-y: 15px;
+  background-repeat: no-repeat;
+}
+
+section.slide h1 {
+  background-image: url(../images/AngularJS-small.png);
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
