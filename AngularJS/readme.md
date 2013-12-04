@@ -33,8 +33,16 @@
   + le formatage
   + le concept MVC
 
-#Avantages et inconvénients
+#Avantages
+  + la simplicité
+  + Une réponse ciblé
+  + l'extensibilité
+  
+#inconvénients
+  + Sa jeunesse
+  + La gestion des scopes
+  + JavaScript
 
 #Question/réponses
-
+![](../images/question-mark.jpg "Des Questions")
 

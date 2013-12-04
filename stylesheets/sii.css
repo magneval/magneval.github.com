@@ -185,3 +185,15 @@ section.slide h1 {
   background-origin: content-box;
 }
 
+#questionréponses figure {
+  background-color: inherit;
+}
+
+
+#questionréponses img {
+  width: initial;
+  height: initial;
+  position: relative;
+  left: 30%;
+}
+
