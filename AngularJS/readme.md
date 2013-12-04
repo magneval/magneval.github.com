@@ -37,7 +37,8 @@
   + la simplicité
   + Une réponse ciblé
   + le multi-linguisme
-  + l'extensibilité
+  + la validaition des formulaires
+  + orienté tests
   + l'extensibilité
   
 #inconvénients
