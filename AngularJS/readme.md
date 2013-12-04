@@ -36,12 +36,14 @@
 #Avantages
   + la simplicité
   + Une réponse ciblé
+  + le multi-linguisme
+  + l'extensibilité
   + l'extensibilité
   
 #inconvénients
   + Sa jeunesse
   + La gestion des scopes
-  + JavaScript
+  + Java-Script
 
 #Question/réponses
 ![](../images/question-mark.jpg "Des Questions")
