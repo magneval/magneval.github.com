@@ -28,7 +28,7 @@
   + La remonté d'information
   + [Le Cross Site](http://run.plnkr.co/QayFu8Gn0Sj5UctI/)
   + [Démo avec GitHub avec JSonP](http://plnkr.co/edit/r8Euj835e4Ua4ZzIL49s?p=preview)
-  + [Démo avec GitHub sana JSonP](http://plnkr.co/edit/QCpLRBwlXovxGfu3JOUl?p=preview)
+  + [Démo avec GitHub sans JSonP](http://plnkr.co/edit/QCpLRBwlXovxGfu3JOUl?p=preview)
 
 #les directives
   + Le formatage
