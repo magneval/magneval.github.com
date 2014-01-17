@@ -30,6 +30,7 @@
   + [Démo avec GitHub avec JSonP](http://plnkr.co/edit/r8Euj835e4Ua4ZzIL49s?p=preview)
   + [Démo avec GitHub sans JSonP](http://plnkr.co/edit/QCpLRBwlXovxGfu3JOUl?p=preview)
   + [Démo avec GitHub sans JSonP](http://plnkr.co/edit/64s6SqGe4G29RBVdTejn?p=preview)
+  + [Démo avec GitHub sans JSonP 1.0.8](http://plnkr.co/edit/Z213FOj68fmdmeDbTkr7?p=preview)
 
 #les directives
   + Le formatage
